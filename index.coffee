@@ -74,9 +74,7 @@ infoHeight 50px
 render: () -> """
 <div class="container">
     <div class="album-art"></div>
-    <!--<div class="bar-container">
-        <div class="bar bar-progress"></div>
-    </div>-->
+
     <div class="track-info">
         <div class="artist-name"></div>
         <div class="track-title">title</div>
@@ -95,7 +93,7 @@ update: (output, domEl) ->
   title = json.result.title
   program = json.result.programName
   coverUrl = json.result.coverUrl
-  #coverUrl = "https://admuzzum.xdevel.com/covers_sorted/2017/891/39983d8d55612e1c0446c755148ae1eb.jpg";
+
 
   div.find('.artist-name').html(artist)
   div.find('.track-title').html(title)
